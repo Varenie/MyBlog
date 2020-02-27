@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой блог</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header" class="section">
+        <img class="img_ava" src="images/sanya.jpg" />
+        <p><strong>Александр Коротких</strong></p>
+    </div>
+
+    <!-- info about me-->
+    <div id="info" class="section">
+        <h1>Обо мне</h1>
+        <i>Это мой тестовый блог, я не умею красиво писать, поэтому просто поэксперементирую здесь. 
+        А еще я не особо умный, поэтому ориентируюсь на свой старый блог, который я создавал, плохо понимая все. 
+        Как-то так, ну что же, удачи в чтении дальнейшей билеберды)</i>
+        <p class="quote">Тут должна быть клевая цитатка</p>
+    </div>
+
+    <!-- table about my day-->
+    <div class="section">
+        <h1>Расписание сессии</h1>
+        <table>
+            <tr>
+                <th bgcolor="#827f32">Число</th>
+                <th bgcolor="#363B58">11.01</th>
+                <th bgcolor="#363B58">14.01</th>
+                <th bgcolor="#363B58">18.01</th>
+                <th bgcolor="#363B58">22.01</th>
+                <th bgcolor="#363B58">29.01</th>
+            </tr>
+            <tr>
+                <th bgcolor="#827f32">Время</th>
+                <th bgcolor="#363B58">10:40</th>
+                <th bgcolor="#363B58">9:00</th>
+                <th bgcolor="#363B58">14:50</th>
+                <th bgcolor="#363B58">9:00</th>
+                <th bgcolor="#363B58">9:00</th>
+            </tr>
+            <tr>
+                <th bgcolor="#827f32">Название предмета</th>
+                <th bgcolor="#363B58">Математическая логика</th>
+                <th bgcolor="#363B58">СиАОД</th>
+                <th bgcolor="#363B58">Математический анализ</th>
+                <th bgcolor="#363B58">Философия</th>
+                <th bgcolor="#363B58">Моделирование БП</th>
+            </tr>
+            <tr>
+                <th bgcolor="#827f32">Оценка</th>
+                <th bgcolor="#363B58">5</th>
+                <th bgcolor="#363B58">5</th>
+                <th bgcolor="#363B58">5</th>
+                <th bgcolor="#363B58">5</th>
+                <th bgcolor="#363B58">нет данных</th>
+            </tr>
+        </table><br/> Я бы мог придумать что-то более клевое, но даже это придумал не я) Спасибо Лезок!
+    </div>
+
+    <!-- Corussel of photos -->
+    <div class="section">
+        <h1>Фоточки Норвегии</h1>
+        <div class="slideshow_container">
+            <div class="mySlides fade">
+                <div class="numberPages">1/5</div>
+                <img class="corusel_img" src="images/troll_tongue.jpg" style="width: 100%;">
+                <div class="text">Язык Тролля</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numberPages">2/5</div>
+                <img class="corusel_img" src="images/mountains.jpg" style="width: 100%;">
+                <div class="text">Гоооры</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numberPages">3/5</div>
+                <img class="corusel_img" src="images/winterTown.jpg" style="width: 100%;">
+                <div class="text">Снееееег</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numberPages">4/5</div>
+                <img class="corusel_img" src="images/smallTown.jpg" style="width: 100%;">
+                <div class="text">Норвегия:)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numberPages">5/5</div>
+                <img class="corusel_img" src="images/houseINmountains.jpg" style="width: 100%;">
+                <div class="text">Уют</div>
+            </div>
+
+            <!-- Next and previous buttons, code in 'a' is arrows-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Dots and circle -->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
